@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="Tshwane University, registration, web form, University Hub">
+    <meta name="description" content="University Hub registration page">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XIRHAPA XA MABINDZU | Register</title>
+    <link rel="stylesheet" href="st2.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-box">
+            <a href="index.html">
+                <img src="images/FB_IMG_1781255176944.jpg" alt="Xirhapa xa Mabindzu logo" class="logo">
+            </a>
+
+            <div>
+                <h1 style="color: lightgreen;">XIRHAPA XA MABINDZU Hub</h1>
+                <p style="color: lightgreen;">HERITAGE DAY registration</p>
+            </div>
+        </div>
+    </header>
+
+    <nav id="navbar">
+        <ul>
+            <li><a href="index.html" class="nav-link" style="color: lightgreen;">Home</a></li>
+        </ul>
+        <ul>
+              <li><a href="students.html" class="nav-link" style="color: lightgreen;">Services</a></li>
+        </ul>
+            <ul>
+                <li><a href="register.html" class="nav-link" style="color: lightgreen;">Register</a></li>
+        
+            </ul>
+          
+            
+    </nav>
+
+    <div class="container">
+        <main>
+            <section class="card">
+                <h2>Student Registration Form</h2>
+                <p>For Upcomming Event</p>
+				
+				<!--   -- QUESTION 4 -->
+
+                <form id="studentForm" action="Mawewecafee@gmail.com" method="POST" onsubmit="return validateForm()">
+                    <fieldset> 		
+                        <legend>Personal Information</legend>
+						
+						<!-- Question 4.1 -->
+                        <label for="name">Full Names</label>
+                        <input type="text" id="name" placeholder="Enter full name" required>
+
+                        <label for="name">Surname </label>
+                        <input type="text" id="Surname" placeholder="Surname" required>
+
+
+                        <label for="email">Email <Address></Address></label>
+                        <input type="email" id="email" placeholder="Enter email address" required>
+
+                        <label for="password">password</label>
+                        <input type="password" id="password" placeholder="Enter password" required>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Customer Details</legend>
+
+                        <p class="form-heading">Gender:</p>
+                        <div class="inline-options">
+						
+						<!--   --4.2a and 4.2b radio button--> 
+                           
+                           <label for="male">Male:</label><br>
+                           <input type="radio" id="male" name="gender" value="male" required>
+                           <label for="Female">Female:</label><br>
+                           <input type="radio" id="Female" name="gender" value="Female" required>
+                           <label for="other">Other:</label><br>
+                           <input type="radio" id="other" name="gender" value="other" required>
+
+						
+                        </div>
+
+                        <label for="course" >Select Competetion</label>
+                        <select id="compentation" placeholder="Type of competition"">
+						<option value="" disabled selected ---  --->choose an option</option>
+						<option value="modeling">Modeling</option>
+                        <option value="singing">Singing</option>
+                        <option value="modeling">MAkwaya</option>
+                        <option value="modeling">Xibelani</option>
+                        <option value="modeling">Poem</option>
+                        <option value="modeling">Comedy</option>
+                        </select>
+
+                        <label for="studyYear">Age of competor</label>
+                        <input type="number" id="studyYear" min="1" max="25" placeholder="00">
+
+                       
+                        <label for="comments">Comments</label>
+                        <textarea id="comments" rows="5" placeholder="Write a short comment"></textarea>
+                    
+                        <label for="photo">Proof of Payment</label>
+                        <input type="file" id="photo-import" accept="Image/*">
+                        <div id="preview-container">
+                            <img id="Image-preview" src="" alt="your picture" style="max-width: 300px; display: none;">
+                        </div>
+
+                    </fieldset>
+					
+				
+				<button type="submit">Register</button>
+                   
+                </form>
+
+                <p id="formMessage" class="message"></p>
+            </section>
+        </main>
+    </div>
+
+    <footer style="color: lightgreen;">
+        <p>&copy; 2026 XIRHAPA XA MABINDZU HUB8</p>
+    </footer>
+
+    <script src="st2.js"></script>
+</body>
+</html>
